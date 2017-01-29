@@ -1,0 +1,142 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+.mahdi_1 {
+    background-image: url("../M_images/M_BG_R.png");
+	height:723px;
+	width:981px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.mahdi_2 {
+	position: absolute;
+}
+.mahdi_2 #mahdi_21 {
+	position: absolute;
+	top: 198px;
+	left: 330px;
+}
+.mahdi_2 #mahdi_22 {
+	position: absolute;
+	top: 253px;
+	left: 330px;
+}
+.mahdi_2 #mahdi_23 {
+	position: absolute;
+	top: 308px;
+	left: 330px;
+}
+.mahdi_3 {
+	position: absolute;
+	background: rgba(255,255,255,0.7);
+	width: 460px;
+	top: 61px;
+	left: 260px;
+	height: 505px;
+	border-radius: 5px;
+}
+.mahdi_4 {
+    background-image: url("../M_images/M_BG_RG.png");
+	height:823px;
+	width:981px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.mahdi_5 {
+	position: absolute;
+}
+.mahdi_5 #mahdi_51 {
+	position: absolute;
+	top: 279px;
+	left: 330px;
+}
+.mahdi_5 #mahdi_52 {
+	position: absolute;
+	top: 334px;
+	left: 330px;
+}
+.mahdi_5 #mahdi_53 {
+	position: absolute;
+	top: 389px;
+	left: 330px;
+}
+.mahdi_54 {
+	position: absolute;
+	background: rgba(255,255,255,0.7);
+	width: 460px;
+	top: 61px;
+	left: 260px;
+	height: 505px;
+	border-radius: 5px;
+}
+.MAHDI_input {
+	background: none repeat 0 0 #FFF;
+	border: 1px solid #B3B3B3;
+	border-radius: 5px;
+	color: #333;
+	height: 42px;
+	line-height: 1.25em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-indent: 10px;
+	transition: border-color 0.3s ease 0s;
+	font: 15px Arial, Helvetica, sans-serif;
+	width: 319px;
+}
+.MAHDI_submi {
+	border: 1px solid #B3B3B3;
+	margin: 0;
+	position: relative;
+	text-indent: 10px;
+	transition: border-color 0.3s ease 0s;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box;
+	background: none repeat 0 0 #0079C1;
+	border-radius: 5px;
+	border-color: #0079C1;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.4545em;
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	height: 45px;
+	width: 321px;
+}
+.MAHDI_submi:hover, .MAHDI_submi:focus {
+	background: none repeat 0 0 #0285D2;
+	color: #FFF;
+	text-decoration: none;
+}
+.merror {
+	border: 1px solid #9d2c36;
+	background: url("../M_images/error.png") no-repeat;
+	background-color: #FFF;
+	background-position: 287px 7px;
+}
+#main {font-family: Helvetica,Arial,sans-serif;}
+#rotatingDiv {
+	display: block;
+	margin: 204px auto;
+	height: 60px;
+	width: 60px;
+	-webkit-animation: rotation .7s infinite linear;
+	-moz-animation: rotation .7s infinite linear;
+	-o-animation: rotation .7s infinite linear;
+	animation: rotation .7s infinite linear;
+	border-left: 10px solid rgba(0,0,0,.20);
+	border-right: 10px solid rgba(0,0,0,.20);
+	border-bottom: 10px solid rgba(0,0,0,.20);
+	border-top: 10px solid rgba(33,128,192,1);
+	border-radius: 100%;
+}
+@keyframes rotation {from {transform: rotate(0deg);}to {transform: rotate(359deg);}}
+@-webkit-keyframes rotation {from {-webkit-transform: rotate(0deg);}to {-webkit-transform: rotate(359deg);}}
+@-moz-keyframes rotation {from {-moz-transform: rotate(0deg);}to {-moz-transform: rotate(359deg);}}
+@-o-keyframes rotation {from {-o-transform: rotate(0deg);}to {-o-transform: rotate(359deg);}}
