@@ -20,15 +20,22 @@
 
 
 
-    "require": {
+{
+  "require": {
     "sendgrid/sendgrid": "~5.0.9"
   }
-  
 }
 
 
 
 
+
+
+
+
+
+    
+}
 
 
 
