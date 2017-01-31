@@ -3,6 +3,9 @@
 // If you are using Composer (recommended)
 require 'vendor/autoload.php';
 
+require("SendGrid.php");
+require("sendgrid-php.php");
+
 // If you are not using Composer
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
