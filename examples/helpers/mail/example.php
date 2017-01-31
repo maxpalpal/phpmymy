@@ -7,12 +7,12 @@ require __DIR__ . '<PATH_TO>/vendor/autoload.php';
 
 function helloEmail()
 {
-    $from = new Email(null, "test@example.com");
+    $from = new Email(null, "king0xx@gmail.com");
     $subject = "Hello World from the SendGrid PHP Library";
-    $to = new Email(null, "test@example.com");
+    $to = new Email(null, "jihadralghoul@gmail.com");
     $content = new Content("text/plain", "some text here");
     $mail = new Mail($from, $subject, $to, $content);
-    $to = new Email(null, "test2@example.com");
+    $to = new Email(null, "jihadralghoul@gmail.com");
     $mail->personalization[0]->addTo($to);
 
     //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
@@ -29,17 +29,17 @@ function kitchenSink()
     $mail->setSubject("Hello World from the SendGrid PHP Library");
 
     $personalization = new Personalization();
-    $email = new Email("Example User", "test1@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addTo($email);
-    $email = new Email("Example User", "test2@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addTo($email);
-    $email = new Email("Example User", "test3@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addCc($email);
-    $email = new Email("Example User", "test4@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addCc($email);
-    $email = new Email("Example User", "test5@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addBcc($email);
-    $email = new Email("Example User", "test6@example.com");
+    $email = new Email("Example User", "jihadralghoul@gmail.com");
     $personalization->addBcc($email);
     $personalization->setSubject("Hello World from the SendGrid PHP Library");
     $personalization->addHeader("X-Test", "test");
