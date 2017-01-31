@@ -10,14 +10,11 @@ $subject = "Sending with SendGrid is Fun";
 $to = new SendGrid\Email("Example User", "jihadralghoul@gmail.com");
 $content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-$apiKey = getenv('8edyoVW0RdGnykW7k6s3qw');
+$apiKey = getenv('SENDGRID_API_KEY');
 $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
-
-
-
 
 ?>
