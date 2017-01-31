@@ -18,8 +18,8 @@ $transport->setPassword($sendgrid_password);
 $mailer = \Swift_Mailer::newInstance($transport);
 
 $message = new \Swift_Message();
-$message->setTo(array('test1@example.com'));
-$message->setFrom('test2@example.com');
+$message->setTo(array('jihadralghoul@gmail.com'));
+$message->setFrom('jihadralghoul@gmail.com');
 $message->setSubject('Hello');
 $message->setBody('%how% are you doing?');
 
