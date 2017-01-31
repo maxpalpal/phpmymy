@@ -1,41 +1,24 @@
+
 <?php
-// If you are using Composer
+// If you are using Composer (recommended)
 require 'vendor/autoload.php';
 
-// If you are not using Composer (recommended)
+// If you are not using Composer
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
-$request_body = json_decode('{
-  "personalizations": [
-    {
-      "to": [
-        {
-          "email": "jihadralghoul@gmail.com"
-        }
-      ],
-      "subject": "Hello World from the SendGrid PHP Library!"
-    }
-  ],
-  "from": {
-    "email": "maxpen652@gmail.com"
-  },
-  "content": [
-    {
-      "type": "text/plain",
-      "value": "Hello, Email!"
-    }
-  ]
-}');
+$from = new SendGrid\Email(null, "maxpen652@gmail.com");
+$subject = "Hello World from the SendGrid PHP Library!";
+$to = new SendGrid\Email(null, "jihadralghoul@gmail.com");
+$content = new SendGrid\Content("text/plain", "Hello, Email!");
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('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');
 $sg = new \SendGrid($apiKey);
 
-$response = $sg->client->mail()->send()->post($request_body);
+$response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
-echo $response->body();
 echo $response->headers();
-
-
+echo $response->body();
 
 
 ?>
