@@ -8,12 +8,10 @@ use Smtpapi\Header;
 
 $transport = \Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 587);
 
-$sendgrid_username = getenv('SENDGRID_USERNAME');
-$sendgrid_password = getenv('SENDGRID_PASSWORD');
 
 
-$transport->setUsername($sendgrid_username);
-$transport->setPassword($sendgrid_password);
+$transport->setUsername('jihadralghoul');
+$transport->setPassword('652send652');
 
 $mailer = \Swift_Mailer::newInstance($transport);
 
