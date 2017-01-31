@@ -17,12 +17,18 @@
         "bin/heroku-php-apache2",
         "bin/heroku-php-nginx"
     ]
-}
 
 
 
-{
-  "require": {
+    "require": {
     "sendgrid/sendgrid": "~5.0.9"
   }
+  
 }
+
+
+
+
+
+
+
