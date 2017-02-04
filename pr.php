@@ -10,7 +10,7 @@ $sparky = new SparkPost($httpClient, ['key' => '900e849677118183375e843b9f679dff
 $sparky->setOptions(['async' => false]);
 $results = $sparky->transmissions->post([
   'content' => [
-    'from' => 'heroku-node-js-example@sparkpostbox.com',
+    'from' => 'postmaster@disbox.org',
     'subject' => 'Oh hey!',
     'html' => '<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>'
   ],
