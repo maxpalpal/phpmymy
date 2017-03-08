@@ -6,7 +6,10 @@ mysql_connect("y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","mz7y3
 mysql_select_db("fd54ymxjciorkgy4") ;
 mysql_query("set names 'utf8'");
 
-$query = "insert into hope (name) values (10)";
+$query = " INSERT INTO `fd54ymxjciorkgy4`.`hope`
+(`name`)
+VALUES
+(<{max}>) ";
  mysql_query($query);
 
 
