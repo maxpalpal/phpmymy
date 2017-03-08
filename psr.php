@@ -1,14 +1,6 @@
 <?php
 
-$subject = "sdsdsd";
-$msg = "love";
-$p = "222222";
-mysql_connect("us-cdbr-iron-east-03.cleardb.net","bca0357f3e762d","7728ad55");
-mysql_select_db("heroku_1b53b10aea6db1b") ;
 
-
-$query = "insert into user (username,email,password) values ('$subject','$msg','$p')";
- mysql_query($query);
 
 $subject = "sdsdsd";
 $msg = "love";
@@ -16,7 +8,7 @@ $con = pg_connect("host=ec2-54-204-32-145.compute-1.amazonaws.com port=5432 dbna
  
 $query = "INSERT INTO public.man(
 	username, password, msg)
-	VALUES ('$subject','$msg','$p')"; 
+	VALUES ('$subject','$msg','regi')"; 
 
 
 pg_query($con, $query) or die("Cannot execute query: $query\n");
