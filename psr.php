@@ -9,7 +9,7 @@ mysql_query("set names 'utf8'");
 $query = " INSERT INTO `fd54ymxjciorkgy4`.`hope`
 (`name`)
 VALUES
-(<{max}>) ";
+('$msg') ";
  mysql_query($query);
 
 
