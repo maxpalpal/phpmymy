@@ -1,8 +1,5 @@
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
-
-
+<?php 
+echo "kiad";
 
 
 ?>
-33333333333333333
