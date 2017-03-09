@@ -12,7 +12,7 @@ VALUES
 ("jjj")';
  mysql_query($query);
 
-
+echo "sd";
 
 
 
